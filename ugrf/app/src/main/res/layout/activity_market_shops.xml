@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marketbackground"
+    tools:context=".views.activities.MarketShopsActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@android:color/white"
+        android:layout_margin="10dp"
+        android:onClick="backToDashboard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accessoriesButton"
+            android:layout_width="@dimen/categories_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:text="@string/accessories"
+            android:fontFamily="@font/caviardreams"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/collectablesButton"
+            android:layout_width="@dimen/categories_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/accessoriesButton"
+            android:layout_alignParentEnd="true"
+            android:text="@string/collectables"
+            android:fontFamily="@font/caviardreams"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/figurinesButton"
+            android:layout_width="@dimen/categories_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/collectablesButton"
+            android:layout_alignParentStart="true"
+            android:text="@string/figurines"
+            android:fontFamily="@font/caviardreams"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/homewareButton"
+            android:layout_width="@dimen/categories_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/figurinesButton"
+            android:layout_alignParentEnd="true"
+            android:text="@string/homeware"
+            android:fontFamily="@font/caviardreams"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/souvenirsButton"
+            android:layout_width="@dimen/categories_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/homewareButton"
+            android:layout_alignParentStart="true"
+            android:text="@string/souvenirs"
+            android:fontFamily="@font/caviardreams"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stationaryButton"
+            android:layout_width="@dimen/categories_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/souvenirsButton"
+            android:layout_alignParentEnd="true"
+            android:text="@string/stationary"
+            android:fontFamily="@font/caviardreams"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

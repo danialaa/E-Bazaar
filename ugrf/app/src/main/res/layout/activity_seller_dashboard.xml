@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.activities.BuyerDashboardActivity"
+    android:background="@color/colorPrimary">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/logout"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:onClick="logout"
+        android:layout_alignParentEnd="true"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/addButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_layout_size"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@android:color/white"
+            android:padding="20dp"
+            android:clickable="true"
+            android:onClick="goToAdd"
+            android:orientation="vertical"
+            android:elevation="6dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashboard_pic_size"
+                app:srcCompat="@drawable/add_item"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_item"
+                android:fontFamily="@font/caviardreams"
+                android:textSize="@dimen/dashboard_text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/showButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_layout_size"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@android:color/white"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="goToExisting"
+            android:orientation="vertical"
+            android:elevation="6dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashboard_pic_size"
+                app:srcCompat="@drawable/list"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/show_items"
+                android:fontFamily="@font/caviardreams"
+                android:textSize="@dimen/dashboard_text_size"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/profileButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_layout_size"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@android:color/white"
+            android:padding="20dp"
+            android:clickable="true"
+            android:onClick="goToProfile"
+            android:orientation="vertical"
+            android:elevation="6dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashboard_pic_size"
+                app:srcCompat="@drawable/profile"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/profile"
+                android:fontFamily="@font/caviardreams"
+                android:textSize="@dimen/dashboard_text_size"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
