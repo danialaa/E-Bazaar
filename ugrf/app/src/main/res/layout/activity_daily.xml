@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.activities.NewItemDetailsActivity">
+    tools:context=".views.activities.DailyActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerLayout"
@@ -168,7 +168,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/publishButton"
+            android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Publish"
@@ -176,7 +176,7 @@
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:textAllCaps="false"
-            android:onClick="publish"
+            android:onClick="submitCheckup"
             android:fontFamily="@font/caviardreams"
             android:background="@drawable/rounded_bg"
             android:backgroundTint="@color/colorPrimaryDark"

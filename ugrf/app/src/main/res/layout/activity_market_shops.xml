@@ -7,7 +7,7 @@
     tools:context=".views.activities.MarketShopsActivity">
 
     <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/logoutButton"
+        android:id="@+id/backButton"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:background="@drawable/back"
@@ -15,6 +15,16 @@
         android:layout_margin="10dp"
         android:onClick="backToDashboard"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/dailyQuestsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/dailyquest"
+        android:layout_margin="20dp"
+        android:onClick="openQuests"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true" />
 
     <RelativeLayout
@@ -79,6 +89,7 @@
             android:layout_below="@id/figurinesButton"
             android:layout_alignParentEnd="true"
             android:text="@string/homeware"
+            android:onClick="goToHomeware"
             android:fontFamily="@font/caviardreams"
             android:textStyle="bold"
             android:elevation="6dp"
