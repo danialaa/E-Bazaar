@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ar_bg"
+    android:background="@color/colorPrimary"
     tools:context=".views.activities.ARActivity">
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -28,11 +28,5 @@
         android:onClick="addCart"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/item_on_table"
-        android:layout_centerInParent="true"/>
 
 </RelativeLayout>
