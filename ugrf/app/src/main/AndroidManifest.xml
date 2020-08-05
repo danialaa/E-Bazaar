@@ -17,10 +17,9 @@
         <activity android:name=".views.activities.ShopItemsActivity" />
         <activity android:name=".views.activities.MarketShopsActivity" />
         <activity android:name=".views.activities.ProfileActivity" />
-        <activity android:name=".views.activities.ResultActivity" />
         <activity android:name=".views.activities.ItemsActivity" />
         <activity android:name=".views.activities.BuyerDashboardActivity" />
-        <activity android:name=".views.activities.ReportActivity" />
+        <activity android:name=".views.activities.ListActivity" />
         <activity android:name=".views.activities.RegisterActivity" />
         <activity android:name=".views.activities.LoginActivity">
             <intent-filter>

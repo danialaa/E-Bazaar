@@ -8,14 +8,14 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import com.example.ugrf.R;
 
-public class ReportActivity extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity {
     private AppCompatTextView reportTitle;
     //private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report);
+        setContentView(R.layout.activity_list);
 
         //reportTitle = findViewById(R.id.reportTitleText);
         //recyclerView = findViewById(R.id.reportRecycler);
