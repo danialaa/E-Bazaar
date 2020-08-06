@@ -29,4 +29,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true" />
 
+    <fragment
+        android:id="@+id/arFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.ar.sceneform.ux.ArFragment"/>
+
 </RelativeLayout>

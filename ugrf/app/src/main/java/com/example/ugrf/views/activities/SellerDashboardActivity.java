@@ -15,7 +15,7 @@ public class SellerDashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buyer_dashboard);
+        setContentView(R.layout.activity_seller_dashboard);
     }
 
     public void logout(View view) {
@@ -51,5 +51,9 @@ public class SellerDashboardActivity extends AppCompatActivity {
     }
 
     public void goToNotifications(View view) {
+    }
+
+    public void goToAdd(View view) {
+        startActivity(new Intent(SellerDashboardActivity.this, ItemVideoActivity.class));
     }
 }
