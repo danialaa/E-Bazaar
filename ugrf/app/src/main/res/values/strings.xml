@@ -46,4 +46,13 @@
     <string name="homeware">Homeware</string>
     <string name="souvenirs">Souvenirs</string>
     <string name="stationary">Stationary</string>
+
+    <string-array name="item_categories">
+        <item>Accessories</item>
+        <item>Collectables</item>
+        <item>Figurines</item>
+        <item>Homeware</item>
+        <item>Souvenires</item>
+        <item>Stationary</item>
+    </string-array>
 </resources>
